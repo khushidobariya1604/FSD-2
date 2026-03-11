@@ -1,0 +1,24 @@
+ <!-- 2nd element of array will be key and last element will be value of returned object -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=["pqr","mno","xyz","abc","def"]
+        function fisrtlast(x){
+        var temp={};
+        temp[x[1]]=x[x.length-1]
+        var t=JSON.stringify(temp);
+        return t;
+        }
+        console.log(fisrtlast(a));
+        document.write(fisrtlast(a));
+
+    </script>
+</body>
+</html>
