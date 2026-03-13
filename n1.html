@@ -8,10 +8,12 @@
 <body>
     <h1 id="temp"></h1>
     <script>
-        setTimeout(myfun,5000);
-        function myfun(){
-            document.getElementById("temp").innerHTML="Callback Function";
-        }
+        let a=1;
+        let b=2;
+         setInterval(()=> {
+            document.getElementById("temp").innerHTML=++a + ++b;
+         },1000)
+
     </script>
 </body>
 </html>
